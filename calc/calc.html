@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css" />
+</head>
+
+<body>
+    <main class="calc">
+        <div class="output">
+            <input type="text" id="Result" placeholder="0" />
+        </div>
+        <div class="num">
+            <input type="button" name="keys" value="9" class="key" onclick="display('9')" />
+            <input type="button" name="keys" value="8" class="key" onclick="display('8')" />
+            <input type="button" name="keys" value="7" class="key" onclick="display('7')" />
+            <input type="button" name="keys" value="6" class="key" onclick="display('6')" />
+            <input type="button" name="keys" value="5" class="key" onclick="display('5')" />
+            <input type="button" name="keys" value="4" class="key" onclick="display('4')" />
+            <input type="button" name="keys" value="3" class="key" onclick="display('3')" />
+            <input type="button" name="keys" value="2" class="key" onclick="display('2')" />
+            <input type="button" name="keys" value="1" class="key" onclick="display('1')" />
+            <input type="button" name="keys" value="0" class="key" onclick="display('0')" />
+            <input type="button" name="keys" value="." id="decimal" class="key" onclick="display('.')" />
+            <input type="button" name="keys" value="-" class="oper" onclick="display('-')" />
+
+            <input type="button" name="keys" value="&times;" class="oper" onclick="display('*')" />
+            <input type="button" name="keys" value="/" class="oper" onclick="display('/')" />
+            <input type="button" name="keys" value="+" class="oper" id="add" onclick="display('+')" />
+            <input type="button" name="keys" value="=" class="equal" onclick="solve('')" />
+            <input type="button" name="keys" value="c" class="clear" onclick="clearScreen()" />
+        </div>
+    </main>
+    <script src="calc.js"></script>
+</body>
+
+</html>
